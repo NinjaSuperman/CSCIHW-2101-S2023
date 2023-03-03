@@ -9,7 +9,23 @@ package HW1;
 // 01234
 public class Replace {
     public String charReplace(String s, int x, char z) {
-        return null;
+
+        String begin;
+        String end;
+
+        if (x == 0){
+            begin = "";
+        }else{
+            begin = s.substring(0, x);
+        }
+
+        if (x == s.length()){
+            end = "";
+        }else{
+            end  = s.substring(x + 1, s.length());
+        }
+
+        return begin + z + end;
         
     }
     
