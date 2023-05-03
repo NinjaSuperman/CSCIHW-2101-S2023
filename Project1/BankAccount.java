@@ -82,6 +82,7 @@ public class BankAccount {
             } else {
                 System.out.println("Invalid choice");
             }
+            input.close();
         }
     }
 
@@ -185,6 +186,7 @@ public class BankAccount {
         System.out.println("0. Exit");
         System.out.println("Please enter your choice: ");
         choice = input.nextInt();
+        input.close();
         return choice;
     }
 
@@ -239,7 +241,7 @@ public class BankAccount {
         } else { // this would catch any invalid choices like
             System.out.println("Invalid choice");
         }
-
+        input.close();
     }
 
     // Create a method that will calculate the interest on the balance using

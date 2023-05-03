@@ -5,7 +5,7 @@ package HW1;
 // Hint3: A sample story if you are lost can be as simple as "Hello! My name is ____, and I am ____, and my favorite  
 //        color is ___"
 public class Adlibs {
-    public  String story(String name, int age, String favoriteColor) {
-        return null;
+    public String story(String name, int age, String favoriteColor) {
+        return "Hello! My name is " + name + ", and I am " + age + ",\nand my favorite color is " + favoriteColor + ".";
     }
 }
